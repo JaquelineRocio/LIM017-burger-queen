@@ -17,10 +17,11 @@ export class ListProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   typeOfProduct(value: string){
     this.type = value;
-    console.log(this.products)
   }
+
   @ViewChild(MatDrawer) drawer: MatDrawer | undefined;
   onToggleCart() {
     this.drawer?.toggle();

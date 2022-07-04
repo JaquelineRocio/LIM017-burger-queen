@@ -1,23 +1,26 @@
-// import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { ListProductsComponent } from './list-products.component';
+import { ListProductsComponent } from './list-products.component';
 
-// describe('ListProductsComponent', () => {
-//   let component: ListProductsComponent;
-//   let fixture: ComponentFixture<ListProductsComponent>;
+fdescribe('ListProductsComponent', () => {
+  let component: ListProductsComponent;
+  let fixture: ComponentFixture<ListProductsComponent>;
 
-//   beforeEach(async () => {
-//     await TestBed.configureTestingModule({
-//       declarations: [ ListProductsComponent ]
-//     })
-//     .compileComponents();
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ListProductsComponent]
 
-//     fixture = TestBed.createComponent(ListProductsComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
+    })
+    .compileComponents();
 
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+    fixture = TestBed.createComponent(ListProductsComponent);
+    component = fixture.componentInstance;
+    component.type='';
+    fixture.detectChanges();
+  });
+  it('should create', () => {
+
+    expect(component.type).toEqual('');
+  });
+
+});

@@ -12,7 +12,7 @@ export class ListUsersComponent implements OnInit {
   users!:any
   user!: any;
 
-  constructor(private firebaseService: FirebaseService, public dialog: MatDialog) { }
+  constructor(private userFirebaseService: UserFirebaseService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.firebaseService.getUsers().subscribe((usersFirestore)=>{

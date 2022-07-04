@@ -11,12 +11,10 @@ export class MenuComponent implements OnInit {
   constructor(private productFirebase: ProductFirebaseService) { }
 
   ngOnInit(): void {
-
     this.productFirebase.getProducts().subscribe((products)=>{
       this.menu['burguers'] = products.filter(product=>product.typeProduct === 'Burger');
       this.menu['beverages']=products.filter(product=>product.typeProduct === 'Beverages');
       this.menu['accompaniments']=products.filter(product=>product.typeProduct === 'Accompaniments')
-
     })
   }
 
