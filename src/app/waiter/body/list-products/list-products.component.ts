@@ -12,7 +12,6 @@ export class ListProductsComponent implements OnInit {
 
   pedidos=[];
 
-
   constructor() { }
 
   ngOnInit(): void {
