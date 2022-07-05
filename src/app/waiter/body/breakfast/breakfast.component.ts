@@ -13,6 +13,7 @@ export class BreakfastComponent implements OnInit {
   ngOnInit(): void {
     this.productFirebase.getProducts().subscribe((products)=>{
       this.breakfastProducts['breakfasts'] = products.filter(product=>product.typeProduct === 'Breakfast');
+
     })
   }
 
