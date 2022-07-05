@@ -43,6 +43,7 @@ export class OrderSummaryComponent implements OnInit {
   }
 
 
+
   createOrder(event: Event, orders : Order[]){
     this.index++;
     const order = {

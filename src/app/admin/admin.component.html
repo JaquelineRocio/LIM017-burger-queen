@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white d-flex justify-content-between">
+=======
+<nav class="navbar navbar-expand-lg navbar-light text-white d-flex justify-content-between">
+>>>>>>> b8eb8bea10b4549f9a516f85304dff50c80ce151
   <div class="d-flex">
     <a class="navbar-brand text-white">
       <img src="../../../assets/img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top" id="logo">
     </a>
     <a class="navbar-brand text-white title m-3">Burguer Queen</a>
   </div>
+<<<<<<< HEAD
 
 
   <div class="d-flex flex-row navbar-nav">
@@ -17,6 +22,14 @@
           <mat-icon class = "text-white">exit_to_app</mat-icon>
         </a>
 
+=======
+  <div class="d-flex flex-row navbar-nav">
+    <a class="nav-link text-white m-3" routerLink="/admin/products">Products <span class="sr-only">(current)</span></a>
+    <a class="nav-link  text-white m-3" routerLink="/admin/users">Users</a>
+    <a class="nav-nav-link m-3" (click)="signOut($event)" title="Sign-out">
+      <mat-icon class = "text-white exit-icon m-1">exit_to_app</mat-icon>
+    </a>
+>>>>>>> b8eb8bea10b4549f9a516f85304dff50c80ce151
   </div>
 </nav>
 <router-outlet></router-outlet>
